@@ -1,0 +1,21 @@
+Package: weatheranalysisFR
+Type: Package
+Title: Evaluation and Visualisation of the Weather in Freiburg
+Version: 0.1.0
+Author: Donata Buozyte
+Maintainer: Donata Buozyte <donata.buozyte@tum.de>
+Description: The main part of this package is the data frame which contains a few
+    information about the monthly weather condition between 1950 and 2010 
+    in the city Freiburg (im Breisgau).
+    The functions can help to get an overview of the data in the form of lineplots and texts.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    ggplot2,
+    scales,
+    reshape2,
+    cowplot
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat
