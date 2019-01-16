@@ -24,6 +24,6 @@ The format of the date should follow the format \%b \%Y
 \examples{
 rowtotext("Jan 1967")
 rowtotext("Aug 2002")
-##next example contains at least one NA
+## next example contains at least one NA
 rowtotext("Oct 2002")
 }

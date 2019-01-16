@@ -26,14 +26,14 @@ This data set contains various informations about the climate in Freiburg
     from 1950 to 2010 in a monthly rhythm.
 }
 \examples{
-##mean of the max. temperatures
+## mean of the max. temperatures
 mean(klimaFR$temp_max, na.rm = TRUE)
-##sum of sunshine duration in 1950
+## sum of sunshine duration in 1950
 sum(klimaFR$sun_dur[1:12])
-##smallest an largest min. temperature
+## smallest an largest min. temperature
 min(klimaFR$temp_min, na.rm = TRUE)
 max(klimaFR$temp_min, na.rm = TRUE)
-##precipitation in every december
+## precipitation in every december
 klimaFR$precip[klimaFR$month == "12"]
 }
 \keyword{datasets}

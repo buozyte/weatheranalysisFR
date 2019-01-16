@@ -5,6 +5,12 @@
 #'     The last two show the chosen weather condition during the years from the earliest to the latest of the chosen years and during the chosen years.
 #'     If the parameter both is false the first two plots will not be visible.
 #'
+#' @usage plot_weather(x, ...)
+#'
+#' ## with extra arguments
+#' plot_weather(x, yr)
+#' plot_weather(x, yr, both = FALSE)
+#'
 #' @param x a column from klimaFR. This data frame will set the weather condition.
 #' @param yr a integer between 1950 and 2010 or a numeric array with integers between 1950 and 2010. The chosen years will be used to generate the third and fourth plot.
 #' @param both a boolean. This boolean will decide whether you will get both grids or only the grid with the chosen years in yr.
@@ -45,13 +51,13 @@ plot_weather <- function (x, ...) {
 #'
 #' @source DWD Climate Data Center (CDC): Historical monthly station observations (temperature, pressure, precipitation, sunshine duration, etc.) for Germany, version v007, 2018. (\url{http://dwd.de})
 #'
-#' @examples ##mean of the max. temperatures
+#' @examples ## mean of the max. temperatures
 #' mean(klimaFR$temp_max, na.rm = TRUE)
-#' ##sum of sunshine duration in 1950
+#' ## sum of sunshine duration in 1950
 #' sum(klimaFR$sun_dur[1:12])
-#' ##smallest an largest min. temperature
+#' ## smallest an largest min. temperature
 #' min(klimaFR$temp_min, na.rm = TRUE)
 #' max(klimaFR$temp_min, na.rm = TRUE)
-#' ##precipitation in every december
+#' ## precipitation in every december
 #' klimaFR$precip[klimaFR$month == "12"]
 "klimaFR"

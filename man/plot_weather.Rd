@@ -5,6 +5,10 @@
 \title{Lineplot of the weather}
 \usage{
 plot_weather(x, ...)
+
+## with extra arguments
+plot_weather(x, yr)
+plot_weather(x, yr, both = FALSE)
 }
 \arguments{
 \item{x}{a column from klimaFR. This data frame will set the weather condition.}

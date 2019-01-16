@@ -14,7 +14,7 @@ plot_weather.speed <- function(x, yr = NULL, both = TRUE) {
 
   p2 <- ggplot(meltspe, aes(x = date, y = value)) +
     geom_line(aes(colour = variable))+
-    labs(y="mm", x="month", title="Spe in 1950, 1980, 2010", colour = "Years") +
+    labs(y="Bft", x="month", title="Spe in 1950, 1980, 2010", colour = "Years") +
     scale_x_date(labels = date_format("%b"))
 
   pfin <- plot_grid(p1, p2, ncol = 1)
@@ -31,7 +31,7 @@ plot_weather.speed <- function(x, yr = NULL, both = TRUE) {
       spen <- data.frame("date" = date[intv], "spee" = as.numeric(x)[intv])
       p3 <- ggplot(spen, aes(x = date, y = spee)) +
         geom_line() +
-        labs(y="mm", x="month", title=paste("Spe in", yr)) +
+        labs(y="Bft", x="month", title=paste("Spe in", yr)) +
         scale_x_date(labels = date_format("%b"))
       psfin <- p3
 
@@ -77,14 +77,14 @@ plot_weather.speed <- function(x, yr = NULL, both = TRUE) {
 
       p4 <- ggplot(melspen, aes(x = date, y = value)) +
         geom_line(aes(colour = variable)) +
-        labs(y = "mm", x = "month", title = paste("Spe in", toString(namarr)), colour = "Years") +
+        labs(y = "Bft", x = "month", title = paste("Spe in", toString(namarr)), colour = "Years") +
         scale_x_date(labels = date_format("%b"))
 
       intva <- (((ext[1]-1950)*12)+1):((ext[2]-1949)*12)
       alln <- data.frame("date" = date[intva], "spee" = as.numeric(x)[intva])
       p3 <- ggplot(alln, aes(x = date, y = spee)) +
         geom_line() +
-        labs(y="mm", x="year", title=paste("Spe between", ext[1], "and", ext[2])) +
+        labs(y="Bft", x="year", title=paste("Spe between", ext[1], "and", ext[2])) +
         scale_x_date(labels = date_format("%Y"))
 
       psfin <- plot_grid(p3, p4, ncol = 1)
