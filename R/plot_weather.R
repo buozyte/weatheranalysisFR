@@ -21,12 +21,18 @@
 #' @note Without the packages ggplot2, scales, cowplot and reshape2 this function won't work.
 #' If you want to have a better plot (e.g. without overlapping titles), use the zoom (in RStudio).
 #'
+#' @import ggplot2
+#' @import cowplot
+#' @import scales
+#' @import reshape2
+#'
 #' @examples plot_weather(klimaFR$temp_mean)
 #'
 #' plot_weather(klimaFR$precip, yr =  c(2000, 1999, 2006))
 #'
 #' plot_weather(klimaFR$sun_dur, yr =  c(1965, 1954, 1960), both = FALSE)
-
+#'
+#' @export
 plot_weather <- function (x, ...) {
   UseMethod("plot_weather", x)
 }

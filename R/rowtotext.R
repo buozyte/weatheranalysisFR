@@ -15,7 +15,8 @@
 #' rowtotext("Aug 2002")
 #' ## next example contains at least one NA
 #' rowtotext("Oct 2002")
-
+#'
+#' @export
 rowtotext <- function(x) {
   if (class(x) != "character" || length(x) > 1) {
     stop("Sorry, the input has so be a (one) string!")

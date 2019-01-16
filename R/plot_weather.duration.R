@@ -1,3 +1,4 @@
+#' @export
 plot_weather.duration <- function(x, yr = NULL, both = TRUE) {
   date <- as.Date(paste(row.names(klimaFR), "01"), "%b %Y %d")
   all <- data.frame("date" = date, "dur" = as.numeric(x))

@@ -38,4 +38,5 @@ plot_weather(klimaFR$temp_mean)
 plot_weather(klimaFR$precip, yr =  c(2000, 1999, 2006))
 
 plot_weather(klimaFR$sun_dur, yr =  c(1965, 1954, 1960), both = FALSE)
+
 }

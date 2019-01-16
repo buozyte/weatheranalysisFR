@@ -26,4 +26,5 @@ rowtotext("Jan 1967")
 rowtotext("Aug 2002")
 ## next example contains at least one NA
 rowtotext("Oct 2002")
+
 }

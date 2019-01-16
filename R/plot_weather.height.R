@@ -1,3 +1,4 @@
+#' @export
 plot_weather.height <- function(x, yr = NULL, both = TRUE) {
   date <- as.Date(paste(row.names(klimaFR), "01"), "%b %Y %d")
   all <- data.frame("date" = date, "hei" = as.numeric(x))
