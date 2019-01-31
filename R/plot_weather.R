@@ -20,6 +20,7 @@
 #'
 #' @note Without the packages ggplot2, scales, cowplot and reshape2 this function won't work.
 #' If you want to have a better plot (e.g. without overlapping titles), use the zoom (in RStudio).
+#' Please keep in mind that the plots might have gaps because of the missing infomation in the data frame.
 #'
 #' @import ggplot2
 #' @import cowplot
