@@ -17,6 +17,6 @@ test_that("Year not in range", {
 })
 
 test_that("Correct input",{
-  expect_equal(rowtotext("Jan 2003"), "In January 2003 the mean temperature in Freiburg was about 2.05 ºC. During this month the temperature went up to 4.68 ºC and fell down to -0.68 ºC on average. The sunshine duration during the whole month was about 54.7 hours, while the sum of precipitation height was 66.1 mm. Lastly the mean daily wind speed was 2.52 Bft.")
+  expect_equal(rowtotext("Jan 2003"), "In January 2003 the mean temperature in Freiburg was about 2.05 °C. During this month the temperature went up to 4.68 °C and fell down to -0.68 °C on average. The sunshine duration during the whole month was about 54.7 hours, while the sum of precipitation height was 66.1 mm. Lastly the mean daily wind speed was 2.52 Bft.")
   expect_warning(rowtotext("Oct 2002"))
 })

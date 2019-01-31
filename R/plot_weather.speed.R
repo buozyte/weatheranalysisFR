@@ -1,5 +1,5 @@
 #' @export
-plot_weather.speed <- function(x, yr = NULL, both = TRUE) {
+plot_weather.speed <- function(x, yr = NULL, both = TRUE, ...) {
   date <- as.Date(paste(row.names(klimaFR), "01"), "%b %Y %d")
   all <- data.frame("date" = date, "spee" = as.numeric(x))
   spe <- data.frame("date" = date[1:12], "spe50" = as.numeric(x)[1:12],

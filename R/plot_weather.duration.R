@@ -1,5 +1,5 @@
 #' @export
-plot_weather.duration <- function(x, yr = NULL, both = TRUE) {
+plot_weather.duration <- function(x, yr = NULL, both = TRUE, ...) {
   date <- as.Date(paste(row.names(klimaFR), "01"), "%b %Y %d")
   all <- data.frame("date" = date, "dur" = as.numeric(x))
   spe <- data.frame("date" = date[1:12], "dur50" = as.numeric(x)[1:12],

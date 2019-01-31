@@ -8,8 +8,8 @@
 #' @usage plot_weather(x, ...)
 #'
 #' ## with extra arguments
-#' plot_weather(x, yr)
-#' plot_weather(x, yr, both = FALSE)
+#' plot_weather(x, yr, ...)
+#' plot_weather(x, yr, both = FALSE, ...)
 #'
 #' @param x a column from klimaFR. This data frame will set the weather condition.
 #' @param yr a integer between 1950 and 2010 or a numeric array with integers between 1950 and 2010. The chosen years will be used to generate the third and fourth plot.

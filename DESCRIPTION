@@ -9,7 +9,7 @@ Description: The main part of this package is the data frame which contains a fe
     in the city Freiburg (im Breisgau).
     The functions can help to get an overview of the data in the form of lineplots and texts.
 Depends: R (>= 3.2.2)
-License: MIT
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: 

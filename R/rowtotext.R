@@ -29,9 +29,13 @@ rowtotext <- function(x) {
   if (length(row.names(info)) == 0) {
     stop ("The year in your input should be between 1950 and 2010.")
   }
-  p1 <- (paste("In", temp, "the mean temperature in Freiburg was about", info$temp_mean,
-              "ºC. During this month the temperature went up to", info$temp_max,
-              "ºC and fell down to", info$temp_min, "ºC on average."))
+
+  deg <- paste0(intToUtf8(176), "C")
+  degp <- paste0(intToUtf8(176), "C.")
+
+  p1 <- (paste("In", temp, "the mean temperature in Freiburg was about", info$temp_mean, degp,
+              "During this month the temperature went up to", info$temp_max, deg,
+              "and fell down to", info$temp_min, deg, "on average."))
   p2 <- (paste("The sunshine duration during the whole month was about",
               info$sun_dur, "hours, while the sum of precipitation height was",
               info$precip, "mm.", "Lastly the mean daily wind speed was", info$wind_speed,
